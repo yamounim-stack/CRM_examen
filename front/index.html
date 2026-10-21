@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM - Gestion des clients</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mon CRM</h1>
+        <p>Gestion des clients</p>
+    </header>
+
+    <main>
+        <section class="formulaire">
+            <h2>Ajouter un client</h2>
+
+            <form id="clientForm">
+                <input type="text" id="nom" placeholder="Nom complet" required>
+                <input type="email" id="email" placeholder="Adresse email" required>
+                <input type="tel" id="telephone" placeholder="Téléphone">
+
+                <button type="submit">Ajouter le client</button>
+            </form>
+
+            <p id="message"></p>
+        </section>
+
+        <section>
+            <h2>Liste des clients</h2>
+            <div id="clients">
+                Chargement des clients...
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
